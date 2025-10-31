@@ -6,18 +6,18 @@
 /** @type {string} */
 const CACHE_VERSION = '1761954167|7364336502';
 /** @type {string} */
-const CACHE_PREFIX = 'Crown of Soverei-sw-cache-';
+const CACHE_PREFIX = 'game-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
 /** @type {string} */
-const OFFLINE_URL = 'Crown of Sovereigns.offline.html';
+const OFFLINE_URL = 'game.offline.html';
 /** @type {boolean} */
 const ENSURE_CROSSORIGIN_ISOLATION_HEADERS = true;
 // Files that will be cached on load.
 /** @type {string[]} */
-const CACHED_FILES = ["Crown of Sovereigns.html","Crown of Sovereigns.js","Crown of Sovereigns.offline.html","Crown of Sovereigns.icon.png","Crown of Sovereigns.apple-touch-icon.png","Crown of Sovereigns.audio.worklet.js","Crown of Sovereigns.audio.position.worklet.js"];
+const CACHED_FILES = ["index.html","game.js","game.offline.html","game.icon.png","game.apple-touch-icon.png","game.audio.worklet.js","game.audio.position.worklet.js"];
 // Files that we might not want the user to preload, and will only be cached on first load.
 /** @type {string[]} */
-const CACHEABLE_FILES = ["Crown of Sovereigns.wasm","Crown of Sovereigns.pck"];
+const CACHEABLE_FILES = ["game.wasm","game.pck"];
 const FULL_CACHE = CACHED_FILES.concat(CACHEABLE_FILES);
 
 self.addEventListener('install', (event) => {
