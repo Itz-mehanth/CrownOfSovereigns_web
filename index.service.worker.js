@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1763846661|56259425';
+const CACHE_VERSION = '1763848546|463863248';
 /** @type {string} */
 const CACHE_PREFIX = 'Crown of Soverei-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
